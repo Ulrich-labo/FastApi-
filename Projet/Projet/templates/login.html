@@ -1,0 +1,27 @@
+{%extends "base.html" %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="b">
+    <div class="login-container">
+        <form action="/login" method="post">
+            <h2>Sign in</h2>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="d-grid gap-1 col-6 mx-auto mb-3">
+
+                <button class="btn btn-primary" id ="bh" type="submit">Sign In</button>
+                </div>
+            <p class="signup-option">Password fogot? <a href="/forgot_password">reset</a></p>
+          
+        </form>
+    </div>
+</div>
+
+{% endblock %}

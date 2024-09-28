@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% include 'navbar.html' %}
+
+
+<div class="container d-flex flex-column align-items-center justify-content-center vh-100" id="home">
+    
+    <div class="mb-4 lead text-center">
+        <img src="/static/exemplelogo.png" class="img-fluid" alt="ACM Logo" style="max-width: 40%; height: auto;">
+    </div>
+    
+   
+    <h1 class="display-4 fw-bold text-center"  style="color:white">Welcome to our website!</h1>
+    
+    
+    <div class="d-grid gap-2 d-sm-flex justify-content-center">
+        <a href="/articles/write" id = "bh1" class="btn btn-primary btn-lg ">Write</a>
+        <a href="/articles/browse" id = "bh1" class="btn btn-primary btn-lg">Browse</a>
+    </div>
+</div>
+
+{% endblock %}
