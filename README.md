@@ -38,7 +38,7 @@ You can install all dependencies via the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
   ```
-##Running the Application:
+## Running the Application:
 Clone the repository:
 
 ```bash
@@ -59,9 +59,9 @@ uvicorn main:app --reload
 ```
 Access the application by navigating to http://127.0.0.1:8000 in your web browser.
 
-##Database Configuration:
+## Database Configuration:
 The application uses SQLAlchemy to manage the database. Be sure to configure the database connection string in the .env or configuration file as needed.
-##Features in Detail:
+## Features in Detail:
 1. Article Publishing:
 Users can create, edit, and delete their own articles, with a rich text editor to format their content. Articles can include multimedia attachments like images.
 
